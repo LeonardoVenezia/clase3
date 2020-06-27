@@ -17,6 +17,10 @@ background-clip: border-box padding-box content-box */
     /* background-image: linear-gradient(to right, #12c2e9 20%, #c471ed 40%, #c471ed 60%, #f64f59 80%); */
     /* background-image: radial-gradient(circle, #12c2e9 1% , #c471ed 30% );
     background-position: 200px -100px; */
+    padding: 20px;
+    margin:20px;
+    background-clip: padding-box;
+    border: 20px solid black;
 }
 img {
     width: 200px;
