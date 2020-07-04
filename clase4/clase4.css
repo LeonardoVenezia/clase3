@@ -85,6 +85,7 @@ p::before {
     top: 0;
     left: 0;
     box-shadow: 10px 10px 10px black;
+    display: none;
 }
 
 .fijo ul {
@@ -102,16 +103,24 @@ p::before {
     width: 100px;
     height: 100px;
     background-color: red;
-    display: none;
 }
  /* and (orientation: landscape) */
 
-@media (min-width: 700px) {
+@media (min-width: 400px) {
     .fijo {
-        /* background-color: coral; */
-        display: none;
-    }
-    .menuMobile {
         display: block;
     }
+    .menuMobile {
+        display: none;
+    }
 }
+@media (min-width: 700px) {
+    .fijo {
+        background-color: coral;
+        /* display: none; */
+    }
+    /* .menuMobile {
+        display: block;
+    } */
+}
+
