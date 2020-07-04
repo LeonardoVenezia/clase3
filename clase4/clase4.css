@@ -74,3 +74,44 @@ p::before {
 .dos {
     background-color: blue;
 }
+
+
+
+.fijo {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: blueviolet;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 10px 10px black;
+}
+
+.fijo ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+ .fijo ul li {
+     padding-left: 16px;
+ }
+.menuMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: none;
+}
+ /* and (orientation: landscape) */
+
+@media (min-width: 700px) {
+    .fijo {
+        /* background-color: coral; */
+        display: none;
+    }
+    .menuMobile {
+        display: block;
+    }
+}
