@@ -1,0 +1,76 @@
+/* .contenedor > p {
+    color: red;
+} */
+
+/* .contenedor.padre {
+    background-color: blue;
+} */
+
+/* * {
+    border: 1px solid black;
+} */
+
+/* p + p {
+    color: red;
+} */
+
+/* [type="text"] {
+    padding: 50px;
+} */
+
+/* p:hover {
+    color: red;
+} */
+
+/* input[type="text"]:focus {
+    background-color: red;
+} */
+
+/* p:nth-child(odd) {
+    color: green;
+} */
+
+/* p::first-letter {
+    color: red;
+} */
+
+body {
+    counter-reset: contador;
+}
+
+.contenedor > p {
+    counter-increment: contador;
+}
+
+.contenedor .padre p {
+    counter-reset: contador;
+}
+
+p::before {
+    content: counter(contador) "-";
+}
+
+/* p::before {
+    content: "BEFORE"
+} */
+
+
+
+
+/* POSITION */
+
+.relativo {
+    position: relative;
+    height: 500px;
+}
+
+.absoluto {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.dos {
+    background-color: blue;
+}
