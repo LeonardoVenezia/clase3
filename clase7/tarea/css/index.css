@@ -1,0 +1,13 @@
+.logo {
+    height: 100px;
+}
+
+.producto {
+    width: 90%;
+    height: 250px;
+    background-color: aquamarine;
+}
+
+.contenedor-productos {
+    margin-top: 16px;
+}
